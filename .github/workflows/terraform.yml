@@ -81,7 +81,7 @@ jobs:
     #       echo '{"api_key": "${{ secrets.GOOGLE_API }}"}' > google_api.json
     - name: create-json
       id: create-json
-      uses: google/create-json@v1
+      uses: jsdaniell/create-json@1.1.2
       with:
         name: "google_api.json"
         json: ${{ secrets.GOOGLE_API }}   
