@@ -50,7 +50,9 @@ Thumbs.db
 
 # Terraform configuration folders and files
 *terraform*
+!terraform.tfvars
 import
+*.json
 # zip files
 *.zip
 !py-package.zip

@@ -17,7 +17,7 @@ provider "aws" {
 }
 
 provider "googleworkspace" {
-  credentials             = "./tfws-service-account-key-2023-08-22.json"
+  credentials             = "./google_api.json"
   customer_id             = "C00hhjg7h"
   impersonated_user_email = "sean@seanguostudio.click"
   #   oauth_scopes = [
