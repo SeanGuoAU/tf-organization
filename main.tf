@@ -45,4 +45,3 @@ module "google_wrokspace" {
   project      = var.project
   email_suffix = var.email_suffix
 }
-
