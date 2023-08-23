@@ -77,10 +77,14 @@ jobs:
         aws-region: ap-southeast-2
 
 
-    - name: Use secret in JSON
-      run: |
-          echo '{"api_key": "${{ secrets.GOOGLE_API }}"}' > google_api.json
-          
+    # - name: Use secret in JSON
+    #   run: |
+    #       echo '{"api_key": "${{ secrets.GOOGLE_API }}"}' > google_api.json
+    - name: Upload to Google Play
+      uses: r0adkll/upload-google-play@v1
+      with:
+        serviceAccountJsonPlainText: ${{ secrets.GOOGLE_API }}     
+
     # Initialize a new or existing Terraform working directory by creating initial files, loading any remote state, downloading modules, etc.
     - name: Terraform Init
       run: terraform init
