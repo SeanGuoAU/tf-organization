@@ -107,5 +107,5 @@ jobs:
       run: terraform apply -auto-approve -input=false
 
     # Generates outputs for Terraform
-    - name: Terraform Output
+    - name: Terraform Output(AWS Account IDs)
       run: terraform output

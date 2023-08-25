@@ -7,4 +7,4 @@ layer_3_2_name = "Prod"
 ############################################
 email_suffix = "@seanguostudio.click"
 ############################################ All project aliases
-project = ["A_test_1", "A_test_2"]
+project = ["A_test_3", "A_test_4"]
