@@ -1,6 +1,6 @@
 ############################################ AWS Organization Hierarchies
 root_layer_id = "r-1w1p"
-## project layer <<---
+## project layer here <<---
 layer_2_name   = "Infrastructure"
 layer_3_1_name = "Pre-Prod"
 layer_3_2_name = "Prod"
