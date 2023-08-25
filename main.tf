@@ -36,7 +36,6 @@ module "aws_organization" {
   layer_2_name   = var.layer_2_name
   layer_3_1_name = var.layer_3_1_name
   layer_3_2_name = var.layer_3_2_name
-
 }
 
 module "google_wrokspace" {

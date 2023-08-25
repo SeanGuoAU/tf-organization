@@ -24,20 +24,20 @@ resource "aws_organizations_organizational_unit" "layer_3_2" {
 }
 
 ################################################## organizational_accounts
-resource "aws_organizations_account" "pre-prod_account" {
-  count     = length(var.project)
-  name      = "infra_preprod_${lower(var.project[count.index])}"
-  email     = "infra_preprod_${lower(var.project[count.index])}${local.email_domain}"
-  parent_id = aws_organizations_organizational_unit.layer_3_1[count.index].id
-}
+# resource "aws_organizations_account" "pre-prod_account" {
+#   count     = length(var.project)
+#   name      = "infra_preprod_${lower(var.project[count.index])}"
+#   email     = "infra_preprod_${lower(var.project[count.index])}${local.email_domain}"
+#   parent_id = aws_organizations_organizational_unit.layer_3_1[count.index].id
+# }
 
-resource "aws_organizations_account" "prod_account" {
-  count     = length(var.project)
-  name      = "infra_prod_${lower(var.project[count.index])}"
-  email     = "infra_prod_${lower(var.project[count.index])}${local.email_domain}"
-  parent_id = aws_organizations_organizational_unit.layer_3_2[count.index].id
-}
+# resource "aws_organizations_account" "prod_account" {
+#   count     = length(var.project)
+#   name      = "infra_prod_${lower(var.project[count.index])}"
+#   email     = "infra_prod_${lower(var.project[count.index])}${local.email_domain}"
+#   parent_id = aws_organizations_organizational_unit.layer_3_2[count.index].id
+# }
 
-locals {
-  email_domain = var.email_suffix
-}
+# locals {
+#   email_domain = var.email_suffix
+# }
