@@ -38,9 +38,9 @@ module "aws_organization" {
   layer_3_2_name = var.layer_3_2_name
 }
 
-module "google_wrokspace" {
-  source = "./modules/Google"
+# module "google_wrokspace" {
+#   source = "./modules/Google"
 
-  project      = var.project
-  email_suffix = var.email_suffix
-}
+#   project      = var.project
+#   email_suffix = var.email_suffix
+# }
