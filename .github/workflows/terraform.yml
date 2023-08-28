@@ -44,10 +44,10 @@
 
 name: 'Terraform'
 
-# on: [workflow_dispatch]
-on:
-  push:
-    branches: [ "main" ]
+on: [workflow_dispatch]
+# on:
+#   push:
+#     branches: [ "main" ]
 
 # permissions:
 #   contents: read
@@ -81,12 +81,7 @@ jobs:
     #       echo '{"api_key": "${{ secrets.GOOGLE_API }}"}' > google_api.json
     - name: create-json
       run: |
-        echo '${{ secrets.GOOGLE_API }}' > google_api.json
-      # id: create-json
-      # uses: jsdaniell/create-json@1.1.2
-      # with:
-      #   name: "google_api.json"
-      #   json: ${{ secrets.GOOGLE_API }}   
+        echo '${{ secrets.GOOGLE_API }}' > google_api.json  
 
     # Initialize a new or existing Terraform working directory by creating initial files, loading any remote state, downloading modules, etc.
     - name: Terraform Init
