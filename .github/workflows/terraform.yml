@@ -44,10 +44,10 @@
 
 name: 'Terraform'
 
-on: [workflow_dispatch]
-# on:
-#   push:
-#     branches: [ "main" ]
+# on: [workflow_dispatch]
+on:
+  push:
+    branches: [ "main" ]
 
 # permissions:
 #   contents: read
@@ -76,9 +76,6 @@ jobs:
         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         aws-region: ap-southeast-2
 
-    # - name: Use secret in JSON
-    #   run: |
-    #       echo '{"api_key": "${{ secrets.GOOGLE_API }}"}' > google_api.json
     - name: create-json
       run: |
         echo '${{ secrets.GOOGLE_API }}' > google_api.json  
