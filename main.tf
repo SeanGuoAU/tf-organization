@@ -42,5 +42,6 @@ module "google_wrokspace" {
   source = "./modules/Google"
 
   project      = var.project
+  email_prefix = var.email_prefix
   email_suffix = var.email_suffix
 }
