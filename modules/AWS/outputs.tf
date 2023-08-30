@@ -8,12 +8,12 @@
 #   value       = aws_organizations_account.prod_account
 # }
 
-output "preprod_output_test_id" {
-  description = "ID of the AWS preprod_unit"
-  value       = aws_organizations_organizational_unit.layer_3_1
-}
+# output "preprod_output_test_id" {
+#   description = "ID of the AWS preprod_unit"
+#   value       = aws_organizations_organizational_unit.layer_3_1
+# }
 
-output "prod_output_test_id" {
-  description = "ID of the AWS prod_unit"
-  value       = aws_organizations_organizational_unit.layer_3_2
-}
+# output "prod_output_test_id" {
+#   description = "ID of the AWS prod_unit"
+#   value       = aws_organizations_organizational_unit.layer_3_2
+# }
