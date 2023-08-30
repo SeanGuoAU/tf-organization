@@ -8,4 +8,4 @@ layer_3_2_name = "Prod"
 email_prefix = ["prepro", "pro"]
 email_suffix = "@seanguostudio.click"
 ############################################ All project aliases
-project = ["A_test_1", "A_test_2"] #Please fill in the project according to this format ["a", "b", "c"], and only one project can be added at a time.
+project = [] #Please fill in the project according to this format ["a", "b", "c"], and only one project can be added at a time.
