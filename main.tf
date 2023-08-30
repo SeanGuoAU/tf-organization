@@ -27,21 +27,21 @@ provider "googleworkspace" {
   #   ]
 }
 ##################################################
-module "aws_organization" {
-  source = "./modules/AWS"
+# module "aws_organization" {
+#   source = "./modules/AWS"
 
-  project        = var.project
-  email_suffix   = var.email_suffix
-  root_layer_id  = var.root_layer_id
-  layer_2_name   = var.layer_2_name
-  layer_3_1_name = var.layer_3_1_name
-  layer_3_2_name = var.layer_3_2_name
-}
+#   project        = var.project
+#   email_suffix   = var.email_suffix
+#   root_layer_id  = var.root_layer_id
+#   layer_2_name   = var.layer_2_name
+#   layer_3_1_name = var.layer_3_1_name
+#   layer_3_2_name = var.layer_3_2_name
+# }
 
-module "google_wrokspace" {
-  source = "./modules/Google"
+# module "google_wrokspace" {
+#   source = "./modules/Google"
 
-  project      = var.project
-  email_prefix = var.email_prefix
-  email_suffix = var.email_suffix
-}
+#   project      = var.project
+#   email_prefix = var.email_prefix
+#   email_suffix = var.email_suffix
+# }
